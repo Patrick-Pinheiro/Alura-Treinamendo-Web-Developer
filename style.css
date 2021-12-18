@@ -97,6 +97,10 @@ footer{
     margin-top: 20px;
 }
 
+.main-container-formulario{
+    width: 940px;
+    margin: 0 auto;
+}
 
 form{
     margin: 40px auto;
@@ -241,8 +245,14 @@ td, th{
 
 .imagem-beneficios{
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
 }
 
+.imagem-beneficios:hover{
+    opacity: 0.3;
+}
 
 .video{
     width: 560px;
@@ -250,3 +260,20 @@ td, th{
 
 }
 
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+}
